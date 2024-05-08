@@ -11,7 +11,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Ofast -DNDEBUG -Wno-deprecated-de
 # For finding FindTensorRT.cmake
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
-# TODO: Specify the path to TensorRT root dir
+# Specify the path to TensorRT root dir
+set(TensorRT_DIR /usr/lib/python3.8/dist-packages/tensorrt/)
 if (NOT TensorRT_DIR)
     set(TensorRT_DIR /home/cyrus/work/libs/TensorRT-10.0.0.6/)
 endif()
